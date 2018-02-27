@@ -40,4 +40,4 @@ Used opensorce libraries:
 AutoHotkey-JSON https://github.com/cocobelgica/AutoHotkey-JSON
 
 You can run script multiple times with different settings from different directories.
-Script mem usage ~2.8MB, CPU usage ~0.0%
+Script mem usage ~3MB, CPU usage ~0.0%
