@@ -5,7 +5,7 @@ Menu, Tray, add
 Menu, Tray, add, Run BTC.com Watchdog, RunWD
 Menu, Tray, add, Show Log BTC.com Watchdog, ShowLogWD
 Menu, Tray, add, Stop/Reload BTC.com Watchdog, StopWD
-Menu, Tray, add, Settings BTC.com Watchdog v0.1.01a, SettingsWD 
+Menu, Tray, add, Settings BTC.com Watchdog v0.1.02b, SettingsWD 
 Menu, Tray, Tip, BTC.com Watchdog Paused
 Menu, Tray, Icon, Images\pause_wd.bmp
 Menu, Tray, Disable, Stop/Reload BTC.com Watchdog
@@ -187,15 +187,12 @@ if (WebRequest.StatusText = "OK")
 		err++
 	}
 
-	if (totalRecord != WorkerCount)
-		errorText .= worker . " "	
-	
-		
 	if (warn > 0)
 	{
 		textLog .= "Warning! " . A_Hour . ":" . A_Min . ":" . A_Sec . chr(10) . chr(13) . warningText . chr(10) . chr(13)
 		textErrorLog .= "Warning! " . A_Hour . ":" . A_Min . ":" . A_Sec . chr(10) . chr(13) . warningText . chr(10) . chr(13)
 	}
+
 	if (err > 0)
 	{
 		textLog .= "Error! " . A_Hour . ":" . A_Min . ":" . A_Sec . chr(10) . chr(13) . errorText . chr(10) . chr(13)
